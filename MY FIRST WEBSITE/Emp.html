@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> FLOWERS INC. </title>
+ <style>
+ 	a:link {
+ 		color: black;
+ 		text-decoration: none;
+ 	}
+ 	a:hover {
+ 		color: blue;
+ 		text-decoration: none;
+  }
+  .submit:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  .th {
+    color: blue;
+    background-color: powderblue;
+    border-collapse: collapse;
+  }
+  .td {
+    border: solid black;
+    border-collapse: collapse;
+  }
+  .fix {
+    position: fixed;
+  }
+   .p {
+    font-size: 130%;
+  }
+  .label {
+    font-size: 120%;
+    color: red;
+  } 
+  body {
+    width: 100%;
+    background-color: lightgrey;
+  }
+  table {
+    width: 100%;
+  }
+ </style>
+</head>
+<body>
+  <center>
+  <table border="0">
+  	<tr bgcolor="orange">
+  		<th><button><a href="Home.html"> HOME </a></button></th>
+  		<th><button><a href="Buy.html"> BUY </a></button></th>
+      <th><button> EMPLOYMENT </button></th>
+      <th><button><a href="ABT US.html"> ABOUT US </a></button></th>
+  	</tr>
+  </table>
+  </center>
+  <br>
+  <br>
+  <form method="post" name="employment" target="_self" data-netlify="true" onsubmit="submit" action="EmpForm.html">
+    <label for="date">TODAY'S DATE:</label>
+    <input type="date" name="date" required>
+    <center>
+      <h2>Flowers Inc.</h2>
+      <h1>Application for Employment</h1>
+      <p class="p">To be considered an applicant, you must complete this form. A CV may also be attached. Each Question should be fully and accurately answered. This form will not be submitted until it is completed</p>
+    </center>
+      <table border="0" style="border: 1px solid black; width: 100%; border-collapse: collapse;" width="100%">
+      <tr >
+        <th align="left" class="th" colspan="6"> Personal Information: </th>
+      </tr>
+      <tr class="td">
+        <td> 
+          <label for="fullname" class="label">Your Name:</label>
+        </td>
+        <td>
+         <input type="text" name="fullname" placeholder="Last  First  Middle  Other Names" 
+         style="width: 390%;" required>
+        </td>
+      </tr>
+      <tr class="td">
+        <td> 
+          <label for="address" class="label">Your Address:</label>
+        </td>
+        <td>
+         <input type="text" name="address" placeholder="House Address,  City,  State/Region,  Country"  
+         style="width: 390%;" required> 
+        </td>
+      </tr>
+      <tr class="td">
+        <td> 
+          <label for="emaddress" class="label">Email Address:</label>
+        </td>
+        <td>
+         <input type="text" name="emaddress" placeholder="someone@gmail.com" style="width: 390%;" required> 
+       </td>
+      </tr>
+      <tr class="td">
+        <td> 
+          <label for="number" class="label">Phone Number:</label>
+        </td>
+        <td>
+         <input type="number" name="number" placeholder="012-345-6789" style="width: 390%;" required> 
+       </td>
+      </tr>
+      <tr class="td">
+        <td> 
+          <label for="dob" class="label">Your Date of Birth:</label>
+        </td>
+        <td>
+         <input type="date" name="dob"  
+         style="width: 390%;" required> 
+        </td>
+      </tr>
+      <tr>
+        <th align="left" class="th" colspan="6"> Position Applying For:</th>
+      </tr>
+      <tr class="td">
+        <td>
+          <label for="title" class="label"> Job Title: </label>
+        </td>
+        <td>
+          <input type="text" name="title" 
+          style="width: 390%;" required>
+        </td>
+      </tr>
+      <tr class="td">
+        <td>
+          What shifts will you work?
+        </td>
+        <td>
+          <input type="checkbox" name="shifts">
+        </td>
+        <td>
+          <label for="shifts" class="label"> Days </label>
+        </td>
+        <td>
+          <input type="checkbox" name="shifts2">
+        </td>
+        <td>
+          <label for="shifts2" class="label"> Nights </label>
+        </td>
+      </tr>
+      <tr class="td">
+        <td>
+          <label for="start" class="label"> Available Start Date:</label>
+        </td>
+        <td>
+          <input type="date" name="start" 
+          style="width: 390%;" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="salary" class="label">Minimum Salary: $</label>
+        </td>
+        <td>
+          <input type="number" name="salary" 
+          style="width: 390%;" required>
+        </td>
+      </tr>
+      <tr class="td">
+        <td>
+          <label for="identity" class="label">Proof of Identity</label>
+        </td>
+        <td>
+          <input type="text" name="identity" style="width: 390%;" placeholder="National ID" required>
+        </td>
+      </tr>
+      <tr class="td">
+        <td>
+          Can you travel if the job requires you to?
+        </td>
+        <td>
+          <input type="checkbox" name="travel">
+        </td>
+        <td>
+          <label for="travel" class="label">Yes</label>
+        </td>
+        <td>
+          <input type="checkbox" name="travel2">
+        </td>
+        <td>
+          <label for="travel2" class="label">No</label>
+        </td>
+      </tr>
+      <tr class="td">
+        <td>
+          Do you have a valid Driver's License?
+        </td>
+        <td>
+          <input type="checkbox" name="license">
+        </td>
+        <td>
+          <label for="license" class="label">Yes</label>
+        </td>
+        <td>
+          <input type="checkbox" name="license2">
+        </td>
+        <td>
+          <label for="license2" class="label">No</label>
+        </td>
+      </tr>
+      <tr>
+        <th>
+      <h3>NOTE: Type none if a particular field doesn't apply to you</h3>
+    </th>
+    </tr>
+       <tr>
+        <th align="left" class="th" colspan="6"> Education/Trainining:</th>
+      </tr>
+      <tr class="td">
+          <th class="td" width="20%">School</th>
+          <th class="td" width="20%">Name</th>
+          <th class="td" width="20%">Location</th>
+          <th class="td" width="15%">Dates Attended From/To:</th>
+          <th class="td" width="15%">Certificate, Diploma, Degree & Major</th>
+          <th class="td">Graduated?</th>
+      </tr>
+      <tr class="td">
+        <td class="td">High School</td>
+        <td class="td"> 
+          <input type="text" name="lc" placeholder="Name of School" required></td>
+        <td class="td"><input type="text" name="hs" placeholder="Location of School" required></td>
+        <td class="td"><input type="text" name="dt" placeholder="yyyy:yyyy" required></td>
+        <td class="td"><input type="text" name="dg" placeholder="Choose One" required></td>
+        <td class="td"><input type="checkbox">Yes
+          <input type="checkbox" name="dg">No
+        </td>
+      </tr>
+      <tr class="td">
+        <td class="td">College</td>
+        <td class="td"><input type="text" name="cg" placeholder="Name of School" required></td>
+        <td class="td"><input type="text" name="lc" placeholder="Location of School" required></td>
+        <td class="td"><input type="text" name="yr" placeholder="yyyy:yyyy" required></td>
+        <td class="td"><input type="text" name="dg" placeholder="Choose One" required></td>
+        <td class="td"><input type="checkbox">Yes
+          <input type="checkbox" name="dg">No</td>
+      </tr>
+      <tr class="td">
+        <td class="td">Other (Business,<br> Vocational,<br> Military)</td>
+        <td class="td"><input type="text" name="name" placeholder="Name" required></td>
+        <td class="td"><input type="text" name="lc" placeholder="Location" required></td>
+        <td class="td"><input type="text" name="yr" placeholder="yyyy : yyyy" required></td>
+        <td class="td"><input type="text" name="dg" placeholder="Choose One" required></td>
+        <td class="td"><input type="checkbox">Yes
+          <input type="checkbox" name="dg">No</td>
+      </tr>
+  </table>
+    <br>
+     <center>
+    <input type="submit" name="submit" class="submit">
+     </center>
+  </form>
+  <br>
+  <br>
+   <center>
+      <h2>To attach CV, send us an email with your cv attached</h2>
+        <h3> Our Email Address: </h3>
+       <a href="mailto: educatuoncrawler@gmail.com">
+         <p id="contact" class="p"> educatuoncrawler@gmail.com </p>
+       </a>
+       <br>
+    </center>
+  <script type="text/javascript">
+    const form = document.querySelector("custom-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const entries = Object.fromEntries(data.entries());
+      console.table(entries);
+    });
+  </script>
+</body>
+</html>

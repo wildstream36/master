@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> FLOWERS INC. </title>
+ <style>
+ 	a:link {
+ 		color: black;
+ 		text-decoration: none;
+ 	}
+ 	a:hover {
+ 		color: blue;
+ 		text-decoration: none;
+ 	}
+  img {
+    width: 100%;
+  }
+  .submit:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  .fix {
+    position: fixed;
+  }
+  .p {
+    font-size: 130%;
+  }
+  .label {
+    font-size: 120%;
+    color: red;
+  }
+  body {
+    width: 100%;
+    background-color: lightgrey;
+  }
+ </style>
+</head>
+<body>
+  <center>
+  <table>
+  	<tr bgcolor="orange">
+  		<th><button><a href="Home.html"> HOME </a></button></th>
+  		<th><button> BUY </button></th>
+  		<th><button><a href="Emp.html" target="_self"> EMPLOYMENT </a></button></th>
+  		<th><button><a href="ABT US.html"> ABOUT US </a></button></th>
+  	</tr>
+  </table>
+  </center>
+  <br>
+  <br>
+  <br>
+  <center>
+    <h2 id="home">Do you want to buy a flower seed?</h2>
+    </center>
+    <a href="#card" class="p">Buy a flower using credit or debit card</a>
+    <br>
+    <a href="#bank" class="p"> Buy a flower using your bank or checking account</a>
+    <br>
+    <a href="#momo" class="p">Buy a flower using your mobile money account</a>
+  <br>
+  <form method="post" name="buy" target="_self" data-netlify="true" onsubmit="submit" action="Purchase.html">
+    <center>
+      <h2>Fields Marked By , *  , Are Required To Be Filled And Completed.</h2>
+      <h3>Your Location</h3>
+  <label for="country" class="label"> *Your Country: </label>
+      <select name="country" required>
+        <p> Please select your country. </p>
+        <option> Select </option>
+        <option>Afghanistan</option>
+        <option>Albania</option>
+        <option>Algeria</option>
+        <option>Andorra</option>
+        <option>Angola</option>
+        <option>Antigua and Barbuda</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Bahrain</option>
+        <option>Bangladesh</option>
+        <option>Barbados</option>
+        <option>Belarus</option>
+        <option>Belgium</option>
+        <option>Belize</option>
+        <option>Benin</option>
+        <option>Bhutan</option>
+        <option>Bolivia</option>
+        <option>Bosnia and Herzegovina</option>
+        <option>Botswana</option>
+        <option>Brazil</option>
+        <option>Brunei</option>
+        <option>Bulgaria</option>
+        <option>Burkina Faso</option>
+        <option>Burundi</option>
+        <option>Cabo Verde</option>
+        <option>Cambodia</option>
+        <option>Cameroon</option>
+        <option>Canada</option>
+        <option>Central African Republic</option>
+        <option>Chad</option>
+        <option>Chile</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Comoros</option>
+        <option>Congo, Democratic Republic</option>
+        <option>Congo, Republic</option>
+        <option>Costa Rica</option>
+        <option>Cote d'Ivoire</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Cyprus</option>
+        <option>Czech Republic</option>
+        <option>Denmark</option>
+        <option>Djibouti</option>
+        <option>Dominica</option>
+        <option>Dominican Republic</option>
+        <option>East Timor</option>
+        <option>Ecuador</option>
+        <option>Egypt</option>
+        <option>Equatorial Guinea</option>
+        <option>Eritea</option>
+        <option>Estonia</option>
+        <option>Eswatini</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Gabon</option>
+        <option>Gambia</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>Greece</option>
+        <option>Grenada</option>
+        <option>Guatmala</option>
+        <option>Guinea</option>
+        <option>Guinea-Bissau</option>
+        <option>Guyana</option>
+        <option>Haiti</option>
+        <option>Honduras</option>
+        <option>Hungary</option>
+        <option>Iceland</option>
+        <option>India</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Iran</option>
+        <option>Iraq</option>
+        <option>Ireland</option>
+        <option>Israel</option>
+        <option>Italy</option>
+        <option>Jamaica</option>
+        <option>Japan</option>
+        <option>Jordan</option>
+        <option>Kazakhstan</option>
+        <option>Kenya</option>
+        <option>Kiribati</option>
+        <option>Korea, North</option>
+        <option>Korea, South</option>
+        <option>Kosovo</option>
+        <option>Kuwait</option>
+        <option>Kyrgyzstan</option>
+        <option>Laos</option>
+        <option>Lativa</option>
+        <option>Lebanon</option>
+        <option>Lesotho</option>
+        <option>Liberia</option>
+        <option>Libya</option>
+        <option>Liechtenstein</option>
+        <option>Lithuania</option>
+        <option>Luxembourg</option>
+        <option>Madagascar</option>
+        <option>Malawi</option>
+        <option>Malaysia</option>
+        <option>Maldives</option>
+        <option>Mali</option>
+        <option>Malta</option>
+        <option>Marshall Islands</option>
+        <option>Mauritania</option>
+        <option>Mexico</option>
+        <option>Micronesia, Federated States</option>
+        <option>Moldova</option>
+        <option>Monaco</option>
+        <option>Mongolia</option>
+        <option>Montenegro</option>
+        <option>Morocco</option>
+        <option>Mozambique</option>
+        <option>Myanmar(Burma)</option>
+        <option>Namibia</option>
+        <option>Nauru</option>
+        <option>Nepal</option>
+        <option>Netherlands</option>
+        <option>New Zealand</option>
+        <option>Nicaragua</option>
+        <option>Niger</option>
+        <option>Nigeria</option>
+        <option>North Macedonia</option>
+        <option>Norway</option>
+        <option>Oman</option>
+        <option>Parkistan</option>
+        <option>Palau</option>
+        <option>Panama</option>
+        <option>Papua New Guinea</option>
+        <option>Paraguay</option>
+        <option>Peru</option>
+        <option>Philippines</option>
+        <option>Poland</option>
+        <option>Portugal</option>
+        <option>Qatar</option>
+        <option>Romania</option>
+        <option>Russia</option>
+        <option>Rwanda</option>
+        <option>Saints Kitts and Nevis</option>
+        <option>Saint Lucia</option>
+        <option>Saint Vincent and the Grenadines</option>
+        <option>Samoa</option>
+        <option>San Marino</option>
+        <option>Sao Tome and Principe</option>
+        <option>Saudi Arabia</option>
+        <option>Senegal</option>
+        <option>Serbia</option>
+        <option>Seychelles</option>
+        <option>Sierra Leone</option>
+        <option>Singapore</option>
+        <option>Slovakia</option>
+        <option>Slovenia</option>
+        <option>Solomon Islands</option>
+        <option>Somalia</option>
+        <option>South Africa</option>
+        <option>Spain</option>
+        <option>Sri Lanka</option>
+        <option>Sudan</option>
+        <option>Sudan, South</option>
+        <option>Suriname</option>
+        <option>Sweden</option>
+        <option>Switzerland</option>
+        <option>Syria</option>
+        <option>Taiwan</option>
+        <option>Tajikistan</option>
+        <option>Tanzania</option>
+        <option>Thailand</option>
+        <option>Togo</option>
+        <option>Tonga</option>
+        <option>Trinidad and Tobago</option>
+        <option>Tunisia</option>
+        <option>Turkey</option>
+        <option>Turkmenistan</option>
+        <option>Tuvalu</option>
+        <option>Ugandu</option>
+        <option>Ukraine</option>
+        <option>United Arab Emirates</option>
+        <option>United Kingdom</option>
+        <option>United States</option>
+        <option>Uruguay</option>
+        <option>Uzbekistan</option>
+        <option>Vanuatu</option>
+        <option>Vatican</option>
+        <option>Venezuala</option>
+        <option>Vietnam</option>
+        <option>Yemen</option>
+        <option>Zambia</option>
+        <option>Zimbabwe</option>
+      </select>
+      <br>
+      <br>
+      <label for="region" class="label">*Your State or Region</label>
+      <input type="text" name="region" placeholder="State or Region" required>
+      <br>
+      <br>
+      <label for="city" class="label">*The City You Are Buying To:</label>
+      <input type="text" name="city" placeholder="Your City" required> 
+      <br>
+      <br>
+      <label for="agent" class="label">*Your Preferred Delivery Agent:</label>
+      <input type="text" name="agent" placeholder="Delivery Agent eg. FedEx" required>
+      <br>
+      <br>
+      <label for="flower" class="label">*The Flower You Want</label>
+      <input type="text" name="flower" placeholder="Flower" required>
+      <br>
+      <br>
+    <img src="https://1drv.ms/i/c/988cab1e3a4f3af4/IQM8KirRg6_0TaN6NYrS4hR8AevECT2BfmCevUvg_xwg080?width=1524&height=994">
+    <br>
+    <br>
+    <input type="checkbox" name="card" id="card">
+        <label for="card" class="label"><strong> Pay Using Your Credit or Debit card </strong></label>
+        <br>
+        <br>
+        <label for="cname" class="label"> Name on Card: </label>
+        <input type="text" name="cname" placeholder="First and last name" >
+        <br>
+        <label for="cnum" class="label">Card Number:</label>
+        <input type="number" name="cnum" placeholder="Card Number">
+        <br>
+        <label for="exp" class="label"> Expiration Date </label>
+        <input type="month" name="exp">
+        <br>
+        <label for="scode" class="label"> Security Code: </label>
+        <input type="password" name="scode" maxlength="4">
+        <br>
+        <input type="submit" name="submit" class="submit">
+        <br>
+        <br>
+    <img src="https://1drv.ms/i/c/988cab1e3a4f3af4/IQN8SiEjC34FQrFgE2oBToYFAbgYcCsisumWAUn4lkaqq8Q?width=1366&height=1011">
+    <br>
+    <br>
+    <input type="checkbox" name="bank" id="bank">
+        <label for="bank" class="label"><strong> Pay Using Your Bank or Checking Account </strong></label>
+        <br>
+        <br>
+        <input type="text" name="noa" placeholder="Name on Account">
+        <br>
+        <input type="text" name="routing" placeholder="Bank Routing Number">
+        <br>
+        <input type="text" name="checking" placeholder="Checking Account Number">
+        <br>
+        <input type="text" name="re-enter" placeholder="Re-enter Checking Account Number">
+        <br>
+        <input type="text" name="id" placeholder="National ID or Driver's License Number">
+        <br>
+        <input type="submit" name="submit" class="submit">
+        <br>
+        <br>
+    <img src="https://1drv.ms/i/c/988cab1e3a4f3af4/IQPpLwiJ4iv3RLQLuCItwxzMAdkZmcZVka4jZReyNTG6s6w?width=1391&height=975">
+    <br>
+    <br>
+    <input type="checkbox" name="momo" id="momo">
+        <label for="momo" class="label"><strong> Pay Using Momo </strong></label>
+        <br>
+        <br>
+        <label for="isp"  class="label"> Choose Your Network Operator </label>
+        <select name="isp">
+          <option> NETWORK </option>
+          <option> MTN</option>
+          <option> AT </option>
+          <option> VODAFONE </option>
+        </select>
+        <br>
+        <br>
+        <label for="num"  class="label"> Your Number</label>
+        <input type="number" name="num">
+        <br>
+        <br>
+        <input type="submit" name="submit" class="submit">
+    </center>
+    <br>
+    <br>
+    <p align="right"><button>
+      <a href="#home">Go To The Top Of This Page</a>
+    </button></p>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
